@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ff72afff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:text="GPS Directo" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textColor="#ff0c02ee"
+                android:textSize="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Digitar nombre"
+                android:id="@+id/textView3" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Registrar"
+                android:id="@+id/button4"
+                android:layout_marginTop="30dp"
+                android:background="#ff0700ff"
+                android:onClick="registrar" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOW"
+                android:id="@+id/button5"
+                android:background="#0e0aff"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HIGH"
+                android:id="@+id/button6"
+                android:layout_gravity="center_horizontal"
+                android:background="#0b16ff"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Start"
+                android:id="@+id/button"
+                android:background="#ff0014ff"
+                android:layout_marginTop="30dp"
+                android:onClick="StartGPS"
+                android:visibility="invisible" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Stop"
+                android:id="@+id/button2"
+                android:layout_gravity="center_horizontal"
+                android:background="#ff0900ff"
+                android:layout_marginTop="40dp"
+                android:onClick="StopGPS"
+                android:visibility="invisible" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="CAPTURAS"
+                android:id="@+id/button3"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="#ff0900ff"
+                android:visibility="invisible"
+                android:nestedScrollingEnabled="false"
+                android:onClick="capturas" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/textView2"
+                android:layout_marginTop="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
